@@ -1,0 +1,20 @@
+{
+  "name": "wei-bbs",
+  "version": "0.0.3",
+  "dependencies": {
+    "async": "^0.2.10",
+    "body-parser": "~1.8.0",
+    "chalk": "^1.1.1",
+    "compression": "~1.0.11",
+    "ejs": "~1.0.0",
+    "express": "~4.8.8",
+    "express-session": "~1.7.6",
+    "method-override": "~2.2.0",
+    "mime": "^1.3.4",
+    "mongoose": "~3.8.15",
+    "morgan": "~1.3.0"
+  },
+  "devDependencies": {
+    
+  }
+}
