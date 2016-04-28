@@ -1,1 +1,1 @@
-# 基于NodeJS + jQuery + Ajax 的实时在线聊天系统
+# 基于NodeJS + MongoDB +  jQuery + Ajax 的实时在线聊天系统
