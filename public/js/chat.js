@@ -73,16 +73,15 @@ $(document).ready(function () {
 
         if (null != g && "" != g) {
             var dialogfriendname = $(".dialog .head span").attr("username");
-            var msg = $("#textarea").val();
             $.ajax({
                 url: '/send',
                 type: 'post',
                 data: {
                     to:dialogfriendname,
-                    msg: msg
+                    msg: filterXSS(g)
                 } ,
                 success: function () {
-                    var i = "<div class='message'>" + "<div class='wrap-text'>" + "<h5 >" + user + "</h5>" + "<div>" + g + "<div class='arrow'>" + "</div>" + "</div>" + "</div>" + "<div class='wrap-ri'>" + "<div ><span>" + f + "</span></div>" + "</div>" + "<div style='clear:both;'></div>" + "</div>";
+                    var i = "<div class='message'>" + "<div class='wrap-text'>" + "<h5 >" + user + "</h5>" + "<div>" + filterXSS(g) + "<div class='arrow'>" + "</div>" + "</div>" + "</div>" + "<div class='wrap-ri'>" + "<div ><span>" + f + "</span></div>" + "</div>" + "<div style='clear:both;'></div>" + "</div>";
                     $(".mes" + a).append(i);
 
                 },
@@ -171,7 +170,7 @@ $(document).ready(function () {
                                 if ($("#lu").text() == nickname) {
                                     var f = "";
                                     for (var k = 0; k < h.msg.length; k++) {
-                                        f += "<div class='message'><div class='wrap-text'><h5 >" + username + "</h5><div>" + h.msg[k].msg + "<div class='arrow'>" + "</div>" + "</div>" + "</div>" + "<div class='wrap-ri'>" + "<div ><span>" + h.msg[k].time + "</span></div>" + "</div>" + "<div style='clear:both;'></div>" + "</div>";
+                                        f += "<div class='message'><div class='wrap-text'><h5 >" + username + "</h5><div>" + filterXSS(h.msg[k].msg) + "<div class='arrow'>" + "</div>" + "</div>" + "</div>" + "<div class='wrap-ri'>" + "<div ><span>" + h.msg[k].time + "</span></div>" + "</div>" + "<div style='clear:both;'></div>" + "</div>";
                                     }
                                     $(".mes" + a).append(f);
                                     $(".chat03_content ul").children().eq(j).css({'color': 'black'});
