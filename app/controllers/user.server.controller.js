@@ -32,7 +32,6 @@ function login(req, res) {
     var password = req.body.password;
     console.log(username);
     User.findOne({username: username }, function (err, user) {
-        console.log(user);
         if (!user) {
             res.json({
                 status: 0,

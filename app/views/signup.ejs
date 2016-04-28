@@ -4,21 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/signup.js"></script>
 </head>
 
 <body>
-    <form method="POST" action="/signup">
-        <fieldset>
-            <legend>注册帐号</legend>
-            <label for="username">  用户名：</label>
-            <input type="text" id="username" name="username" />
-            <label for="password"> 密码：</label>
-            <input type="password" id="password" name="password" />
-             <label for="nickname"> 昵称：</label>
-            <input type="text" id="nickname" name="nickname" />
-            <input type="submit" value="提交">
-        </fieldset>
-    </form>
+
+    <div class="register default " id="register">
+        <div class="logo">
+            <img id="sign-logo" src="images/user.jpeg" width="40px" height="40px">
+        </div>
+        <form action="/signup" autocomplete="off" method="POST" id="form-reg">
+            <input type="text" name="nickname" placeholder="请输入你的昵称" min="1" max="6" required="required">
+            <input type="text" name="username" placeholder="请输入你的账号" id="uname"   required="required">
+            <!--<i class="icon-refresh" id="check-status"></i>-->
+             <span id="check-status" class="glyphicon glyphicon-ok"></span>
+
+            <input type="password" name="password" placeholder="请输入你的密码"  id="psw"  required="required">
+            <input type="submit" value="提交注册">
+            <a href="#" id="goLogin">已有账号？去登录！</a>
+        </form>
+    </div>
 </body>
 
 </html>

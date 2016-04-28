@@ -4,19 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
+    <link rel="stylesheet" href="/css/login.css">
+	<script src="/js/jquery.js"></script>
+	<script src="/js/login.js"></script>
 </head>
 
 <body>
-    <form method="POST" action="/login">
-        <fieldset>
-            <legend>登录</legend>
-            <label for="username">  用户名：</label>
-            <input type="text" id="username" name="username" />
-            <label for="password"> 密码：</label>
-            <input type="password" id="password" name="password" />
-            <input type="submit" value="提交">
-        </fieldset>
-    </form>
+
+    <div class="login default" id="login">
+		<div class="img-user">
+			<img id="img-default" src="images/user.jpeg" width="90px" height="90px">
+		</div>
+		<form action="/login" autocomplete="off" method="POST">
+			<input type="text" placeholder="请输入你的用户名" id="username" name="username" autofocus="autofocus"  required="required">
+			<input type="password" placeholder="请输入你的密码" id="password" name="password"  required="required">
+			<span id="login-check"></span>
+			<input type="button" id="submit" value="登录">
+			<a href="#" id="goRegister" >没有账号？去注册！</a>
+		</form>
+	</div>
 </body>
 
 </html>

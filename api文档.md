@@ -42,3 +42,22 @@
     
     响应: 成功返回`{msg:[{"msg":"xxxxx", time:"xxx"},{"msg":"xxxxx", time:"xxx"}]}`，错误返回`{status:0, errInfo: '错误信息'}`
  
+ 3. 获取好友列表
+ 
+    url: `/getFriendList`
+    
+    method: `POST`
+    
+    参数: ``
+    
+    响应: 成功返回`{"friends":[{"nickname":"小草","username":"xiaocao"}]}`，错误返回`{status:0, errInfo: '错误信息'}`
+    
+  4. 添加好友
+ 
+    url: `/addFriend`
+    
+    method: `POST`
+    
+    参数: `friend=xxxx`
+    
+    响应: 成功返回`{status:1}`，错误返回`{status:0, errInfo: '错误信息'}`

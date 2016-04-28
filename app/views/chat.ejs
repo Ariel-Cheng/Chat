@@ -1,10 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>聊天</title>
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
 </head>
+
 <body>
-      <script src="/js/jquery.js"></script>
+    <div class="main-chat">
+        <div class="header">
+            <img src="images/user.jpeg" >
+            <div id="userID"></div>
+        </div>
+
+
+        <div id="chat-list">
+            <div class="chat03">
+                <div class="chat03_title">
+                    <label class="chat03_title_t">
+                        好友列表</label>
+                </div>
+                <div class="chat03_content">
+                    <ul>
+                        <!--<li>-->
+                            <!--<label class="online">-->
+                            <!--</label>-->
+                            <!--<a href="javascript:;" class="chat03_name">小草</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<label class="offline">-->
+                            <!--</label>-->
+                            <!--</a><a href="javascript:;" class="chat03_name">李丽</a>-->
+                        <!--</li>-->
+                        <!--<li class="choosed">-->
+                            <!--<label class="offline">-->
+                            <!--</label>-->
+                            <!--<a href="javascript:;" class="chat03_name">王旭</a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+
+            </div>
+            <!--<div id="news">-->
+            <!--</div>-->
+            <!--<ul id="info" style="margin: 0 0 0 0;">-->
+            <!--</ul>-->
+        </div>
+
+
+
+        <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" placeholder="添加好友">
+                <button class="search-icon">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="dialog">
+        <div class="head">
+            <p>Direct Chat With <span id="lu"></span></p>
+        </div>
+        <div class="dialog-content">
+                <div class="message_box mes1">
+                </div>
+                <div class="message_box mes2">
+                </div>
+                <div class="message_box mes3" style="display: block;">
+                </div>
+        </div>
+        <div class="dialog-footer">
+
+                <input type="text" id="textarea" >
+                <button class="send">Send</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="logo">
+        从今天起，做一个明媚的女子，不倾国，不倾城，只倾其所有去过自己想要的生活。
+    </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/js/chat.js"></script>
+
 </body>
-</html>

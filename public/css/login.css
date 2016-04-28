@@ -1,0 +1,187 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-size: 2rem;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: url('../images/login5.jpg') no-repeat center;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+
+.default {
+    background-color: rgba(217, 217, 217, 0.8);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 0.5s ease all;
+}
+
+.login {
+    width: 400px;
+    height: 330px;
+    margin-left: -200px;
+    margin-top: -150px;
+    border-radius: 5px;
+}
+
+.register {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -210px;
+    border-radius: 5px;
+}
+
+.login input,.register input[type="text"],.register input[type="password"],.register input[type="submit"] {
+    width: 370px;
+    height: 50px;
+    border-radius: 3.5px;
+    border: 1px solid rgb(193, 205, 205);
+    display: block;
+    margin: 15px auto;
+    padding: 5px 15px;
+    outline: none;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: 0.5s ease border;
+    -webkit-transition: 0.5s ease border;
+    -moz-transition: 0.5s ease border;
+}
+#uname {
+    width: 330px;
+    margin: 15px 5px 15px 15px;
+    display: inline-block;
+}
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: rgb(150, 150, 150);
+}
+
+.login #username {
+    margin-top: 80px;
+}
+
+.login #submit {
+    font-size: 1.7rem;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: rgb(0, 167, 157);
+    margin-bottom: 10px;
+}
+
+.register input[type="submit"] {
+    font-size: 1.7rem;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: rgb(0, 167, 157);
+}
+
+#username:focus, #password:focus, .register input[type="text"]:focus, .register input[type="password"]:focus {
+    border-color: rgb(0, 167, 157);
+}
+
+.img-user {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 167, 157);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    left: 50%;
+    top: -50px;
+    margin-left: -50px;
+    overflow: hidden;
+    /*background: url('user.jpg') no-repeat center;*/
+}
+.logo {
+    position:  absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 167, 157);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+    margin: 7px auto auto 13px;
+
+}
+
+.register form{
+    margin-top: 70px;
+}
+
+input[type="submit"]:active, #submit:active {
+    background-color: rgb(0, 167, 137);
+}
+
+input {
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+#goRegister, #goLogin {
+    font-size: 1.4rem;
+    float: right;
+    padding-right: 15px;
+    color: black;
+}
+
+/*#uname {*/
+    /*width: 330px;*/
+    /*margin: 15px 5px 15px 15px;*/
+    /*display: inline-block;*/
+/*}*/
+
+#check {
+    background-color: rgb(0, 167, 157);
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+#check:active {
+    background-color: rgb(0, 147, 157);
+}
+
+
+.icon-ok {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: green;
+}
+
+.icon-remove {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: red;
+}
+
+.icon-refresh {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 167, 157);
+}
+
+#login-check {
+    height: 24px;
+    font-size: 1.4rem;
+    display: block;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 20px;
+    color: red;
+}
+
+#password {
+    margin-bottom: 0;
+}
